@@ -9,6 +9,8 @@ import {
     Save,
 } from 'lucide-react'
 
+import SkillIcon from '../../components/SkillIcon'
+
 import {
     getAllSkills,
     createSkill,
@@ -405,14 +407,12 @@ function Skills() {
                                         handleChange
                                     }
                                     disabled={saving}
-                                    placeholder="react"
+                                    placeholder="Leave empty to auto-detect from the skill name"
                                     className="w-full rounded-xl border border-slate-700 bg-slate-800 px-4 py-3 text-white outline-none transition placeholder:text-slate-600 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/10 disabled:cursor-not-allowed disabled:opacity-60"
                                 />
 
                                 <p className="mt-2 text-xs text-slate-500">
-                                    Optional. Icon
-                                    support can be
-                                    connected later.
+                                    Optional. Leave it empty and the logo is detected from the skill name (React, Node.js, Tailwind CSS...). You can also type a logo name from simpleicons.org, an emoji, or an image URL.
                                 </p>
                             </div>
 
@@ -525,7 +525,7 @@ function Skills() {
                             <div className="flex items-start justify-between gap-4">
                                 <div className="flex min-w-0 items-center gap-3">
                                     <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-600/10 text-blue-500">
-                                        <Code2 size={21} />
+                                        <SkillIcon skill={skill} size={22} />
                                     </div>
 
                                     <div className="min-w-0">

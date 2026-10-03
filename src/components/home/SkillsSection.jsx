@@ -1,3 +1,5 @@
+import SkillIcon from '../SkillIcon'
+
 function SkillsSection({ skills = [] }) {
     const sortedSkills = [...skills].sort(
         (a, b) =>
@@ -56,7 +58,7 @@ function SkillsSection({ skills = [] }) {
                                 <div className="flex min-w-0 items-center gap-3">
                                     {/* Icon */}
                                     <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-blue-500/10 text-lg text-blue-500 transition group-hover:bg-blue-500/15">
-                                        {skill.icon || '⚡'}
+                                        <SkillIcon skill={skill} size={22} />
                                     </div>
 
                                     {/* Content */}
