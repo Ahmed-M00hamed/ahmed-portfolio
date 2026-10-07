@@ -21,12 +21,11 @@ function ContactSection({ profile }) {
                     </p>
 
                     <h2 className="mt-3 text-4xl font-bold tracking-tight text-white md:text-5xl">
-                        Let's work together
+                        Have a project in mind? Let's build it.
                     </h2>
 
                     <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-400">
-                        Have a project, job opportunity, or just want to
-                        say hello? Feel free to reach out.
+                        Need a website, e-commerce store, or web application for your business? Let's talk.
                     </p>
                 </div>
 

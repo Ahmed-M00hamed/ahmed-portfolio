@@ -37,13 +37,13 @@ function Hero({ profile }) {
                     {/* Title */}
                     <h2 className="mt-5 max-w-2xl text-xl font-semibold leading-snug text-slate-300 sm:text-3xl">
                         {profile?.title ||
-                            'Junior React / Frontend Developer'}
+                            'I Build Modern Websites & Web Apps That Help Businesses Grow.'}
                     </h2>
 
                     {/* Bio */}
                     <p className="mt-5 max-w-2xl text-sm leading-7 text-slate-400 sm:mt-6 sm:text-lg sm:leading-8">
                         {profile?.bio ||
-                            'I build modern, responsive and user-friendly web applications using React and modern frontend technologies.'}
+                            'I build fast, responsive websites, e-commerce stores, and business web applications using modern technologies.'}
                     </p>
 
                     {/* Main Actions */}
